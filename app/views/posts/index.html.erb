@@ -1,0 +1,29 @@
+<h1>posts</h1>
+
+<p>
+  Download:
+  <%= link_to "CSV", posts_path(format: "csv") %> |
+  <%= link_to "Excel", posts_path(format: "xls") %>
+</p>
+
+<table id="posts">
+  <tr>
+    <th>post Name</th>
+    <th>Release Date</th>
+    <th>Price</th>
+  </tr>
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.name %></td>
+    <td><%= post.released_on.strftime("%B %e, %Y") %></td>
+    <td><%= number_to_currency(post.price) %></td>
+  </tr>
+<% end %>
+</table>
+
+<h2>Import posts</h2>
+
+<%= form_tag import_posts_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>

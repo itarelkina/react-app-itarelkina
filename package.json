@@ -8,7 +8,7 @@
     "again": "^0.0.1",
     "axios": "^0.19.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "jspdf-react": "^1.0.10",
     "pdfkit": "^0.10.0",
     "prop-types": "^15.7.2",

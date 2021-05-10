@@ -6,7 +6,7 @@
     "@rails/webpacker": "^4.0.7",
     "@react-pdf/renderer": "^1.6.2",
     "again": "^0.0.1",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "jspdf": "^2.3.1",
     "jspdf-react": "^1.0.10",
